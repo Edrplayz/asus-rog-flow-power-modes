@@ -1,5 +1,7 @@
 # ASUS ROG Flow Z13 Power Mode Scripts
 
+[![Buy Me A Coffee](https://img.shields.io/badge/Buy%20Me%20A%20Coffee-support-yellow?style=for-the-badge&logo=buy-me-a-coffee)](https://buymeacoffee.com/Edrplayzmc)
+
 Automated power mode switching scripts for the **ASUS ROG Flow Z13 (2025)**. One-click shortcuts to switch between Street Mode, Home Mode, Video Mode, and instant Shutdown — no UAC prompts after initial setup.
 
 > **Compatibility notice:** These scripts are designed specifically for ASUS ROG devices running Windows 11 with Modern Standby (S0 Low Power Idle). Some features (custom power plans, ASUS Silent mode) require ASUS Armoury Crate / ATK WMI drivers and will not work on non-ASUS hardware. The brightness control, video mode timeouts, and shutdown script will work on any Windows 11 laptop.
@@ -118,3 +120,11 @@ The power timeout changes use `powercfg /x` plus explicit Modern Standby GUID ov
 - **Windows Update** may reset some Modern Standby power timeout values. Just re-run Video Mode if screen/sleep timeouts revert after an update.
 - If your Windows username or install path contains spaces, the paths in `register_tasks.ps1` will still work as it uses `$MyInvocation` to detect the folder automatically.
 - The ASUS power plan GUIDs are unique to Armoury Crate installations. Run `powercfg /list` to find the GUIDs on your own device and update the bat files if they differ.
+
+---
+
+## Support
+
+If this helped you out, consider buying me a coffee!
+
+[![Buy Me A Coffee](https://img.shields.io/badge/Buy%20Me%20A%20Coffee-support-yellow?style=for-the-badge&logo=buy-me-a-coffee)](https://buymeacoffee.com/Edrplayzmc)
