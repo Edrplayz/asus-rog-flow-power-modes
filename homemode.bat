@@ -13,9 +13,9 @@ echo  ================================================
 echo   ASUS ROG Flow Z  -  Home Mode
 echo  ================================================
 echo.
-echo  [1/5] Setting screen brightness to 50%%...
-powershell -ExecutionPolicy Bypass -NoProfile -Command "$m = Get-CimInstance -Namespace root/WMI -ClassName WmiMonitorBrightnessMethods; Invoke-CimMethod -InputObject $m -MethodName WmiSetBrightness -Arguments @{Timeout=0; Brightness=[byte]50} | Out-Null"
-echo        [OK] Brightness set to 50%%.
+echo  [1/5] Setting screen brightness to 30%%...
+powershell -ExecutionPolicy Bypass -NoProfile -Command "$m = Get-CimInstance -Namespace root/WMI -ClassName WmiMonitorBrightnessMethods; Invoke-CimMethod -InputObject $m -MethodName WmiSetBrightness -Arguments @{Timeout=0; Brightness=[byte]30} | Out-Null"
+echo        [OK] Brightness set to 30%%.
 echo.
 echo  Running admin steps via scheduled task (no UAC prompt)...
 schtasks /Run /TN "ModeScripts\HomeMode" >nul 2>&1
